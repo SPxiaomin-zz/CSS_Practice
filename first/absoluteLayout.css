@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    -webkit-user-select: none;
+        -ms-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+}
+
+html, body, .page {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: "Helvetaca Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.header, 
+.footer,
+.content {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.header {
+    height: 48px;
+    padding: 0 5px;
+    background-color: #21292B;
+    color: #fff;
+    top: 0;
+    z-index: 1;
+}
+
+.header > h1 {
+    line-height: 48px;
+    margin: 0 0 0 10px;
+    font-size: 18px;
+    float: left;
+}
+
+.header > a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-size: 48px 144px;
+    text-indent: -9em;
+    overflow: hidden;
+}
+
+.header > .icon-search,
+.header > .icon-add {
+    float: right;
+}
+
+.icon-search,
+.icon-add {
+    background: url(http://img.mukewang.com/547d339b000188bb00960288.png) no-repeat;
+}
+
+.icon-add {
+    background-position: 0 -48px;
+}
+
+.footer {
+    height: 52px;
+    border-top: 1px solid #dfdfdf;
+    background-color: #fcfcfc;
+    bottom: 0;
+    z-index: 1;
+}
+
+.footer > a {
+    width: 25%;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    float: left;
+}
+
+.footer > a > i {
+    display: block;
+    height: 35px;
+    margin-bottom: -3px;
+    background-size: 35px 280px;
+}
+
+.footer > .active {
+    color: #45c018;
+}
+
+.icon-wechat,
+.icon-contacts,
+.icon-finds,
+.icon-mes {
+    background: url(http://img.mukewang.com/547d33970001444d00700560.png) no-repeat center top;
+}
+
+.icon-contacts {
+    background-position: center -70px;
+}
+
+.icon-finds {
+    background-position: center -140px;
+}
+
+.active .icon-mes {
+    background-position: center -245px;
+}
+
+.content {
+    top: 48px;
+    bottom: 53px;
+    overflow: auto;
+}
+
+.wechat-list {
+    display: block;
+    height: 64px;
+    padding: 8px 12px;
+    border-sizing: border-box;
+-webkit-border-sizing: border-box;
+-moz-border-sizing: border-box;
+-ms-border-sizing: border-box;
+    border-bottom: 1px solid #d7d7d7;
+    background-color: #fff;
+}
+
+.wechat-list:last-child {
+    border-bottom: 0;
+}
+
+.wechat-list > img {
+    width: 48px;
+    height: 48px;
+    float: left;
+}
+
+.wechat-list > .cell {
+    padding-left: 58px;
+    line-height: 24px;
+    color: #333;
+}
+
+.wechat-h-time {
+    overflow: hidden;
+}
+
+.wechat-h-time > h5 {
+    font-size: 100%;
+    float: left;
+}
+
+.wechat-h-time > time {
+    font-size: 12px;
+    color: #b9b9b9;
+    float: right;
+}
+
+.wechat-h-time + p {
+    margin: 0 20px 0 0;
+    font-size: 14px;
+    color: #a8a8a8;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
