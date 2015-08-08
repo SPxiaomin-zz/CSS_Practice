@@ -1,0 +1,58 @@
+/* 消除默认的内外边距 */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    /* 除去无序列表左边默认的小圆点样式 */
+    list-style-type: none;
+    /* 除去无序列表默认的内，外边距 */
+    padding: 0;
+    margin: 0;
+    /* 采用绝对定位，使得导航不会随右侧内容区域移动，并设置top=0,bottom=0,使得导航获得整个可视界面高度 */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+li {
+    /* 设置每个链接占据 1/4 的高度, 注意这个25%只能设置在li元素，如果设置在a元素效果就不对了，因为使用百分数设置高度时，是根据父元素的高度来计算的 */
+    height: 25%;
+    background-color: purple;
+}
+
+a:link,
+a:visited {
+    /* 设置a元素占据其父元素li的全部高度 */
+    height: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    /* 块元素默认占用全部可用宽度 */
+    width: 120px;
+    text-decoration: none;
+    /* a元素默认是行内元素，只有设置为块级元素才能设置高度，否则失效. 还有很重要的一点，把链接显示为块元素可使真个链接区域可点击(不仅仅是文本) */
+    display: block;
+}
+
+a:hover,
+a:active {
+    background-color: #f30;
+}
+
+/* 使内容垂直居中 */
+span {
+    position: relative;
+    top: 46%;
+}
+
+/* 左侧导航栏占据120px，故将内容区域距离左边界130px */
+.content {
+    margin-left: 130px;
+}
