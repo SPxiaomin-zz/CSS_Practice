@@ -1,0 +1,33 @@
+html {
+    /* layout */
+    background: url(/static/image/background.jpg) no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+html,
+body {
+    /* layout */
+    margin: 0;
+    padding: 0;
+}
+
+div.transbox {
+    /* color */
+    background-color: #fff;
+    opacity: 0.6;
+    filter: alpha(opacity=60);/* for IE */
+
+    /* layout */
+    width: 400px;
+    margin: 50px auto;
+    padding: 35px 20px;
+    text-indent: 2em;
+    border-radius: 3px;
+
+    /* typography */
+    color: #333;
+    font: bold 14px/1.428 sans-serif;
+}
